@@ -1,4 +1,4 @@
-package com.adt.utility;
+package com.adt.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

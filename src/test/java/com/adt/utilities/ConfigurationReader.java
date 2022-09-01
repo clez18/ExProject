@@ -1,4 +1,4 @@
-package com.adt.utility;
+package com.adt.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;
