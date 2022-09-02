@@ -1,49 +1,28 @@
 package com.adt.step_definitions;
 
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Login_StepDef {
-    @When("user enters librarian username")
-    public void user_enters_librarian_username() {
-        System.out.println("User enters librarian username");
-    }
 
-    @When("user enters librarian password")
-    public void user_enters_librarian_password() {
-        System.out.println("User enters librarian password");
-    }
+    @Given("user is on the login page")
+    public void user_is_on_the_login_page() {
 
-    @Then("user should see the dashboard")
-    public void user_should_see_the_dashboard() {
-        System.out.println("User should see the dashboard");
     }
+    @When("user enters tomsmith username")
+    public void user_enters_tomsmith_username() {
 
-    @When("user enters student username")
-    public void userEntersStudentUsername() {
-        System.out.println("User enters student username");
     }
+    @When("user enters SuperSecretPassword password")
+    public void user_enters_super_secret_password_password() {
 
-    @And("user enters student password")
-    public void userEntersStudentPassword() {
-        System.out.println("User enters student password");
     }
+    @Then("user should see the successful login")
+    public void user_should_see_the_successful_login() {
 
-    @When("user enters admin username")
-    public void userEntersAdminUsername() {
-        System.out.println("user enters admin username");
-    }
-
-    @And("user enters admin password")
-    public void userEntersAdminPassword() {
-        System.out.println("user enters admin password");
-    }
-
-    @Given("user is on the library login page")
-    public void userIsOnTheLibraryLoginPage() {
-        System.out.println("user is on the library login page");
     }
 
 }

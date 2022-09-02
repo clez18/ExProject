@@ -48,32 +48,32 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     var chartData = {
-        labels:  [ "@Regression",  "@admin",  "@db",  "@employee",  "@librarian",  "@login",  "@smoke",  "@student", ] ,
+        labels:  [ "@Regression",  "@login",  "@smoke", ] ,
         datasets: [
             {
                 label: "Passed",
                 backgroundColor: "#92DD96",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Failed",
                 backgroundColor: "#F2928C",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Skipped",
                 backgroundColor: "#8AF",
-                data:  [ 100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00,  100.00, ] 
+                data:  [ 100.00,  100.00,  100.00, ] 
             },
             {
                 label: "Pending",
                 backgroundColor: "#F5F28F",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             },
             {
                 label: "Undefined",
                 backgroundColor: "#F5B975",
-                data:  [ 0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00, ] 
+                data:  [ 0.00,  0.00,  0.00, ] 
             }
         ]
     };
@@ -133,7 +133,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>01 Sep 2022, 22:51</td>
+      <td>01 Sep 2022, 23:35</td>
     </tr>
   </tbody>
 </table>
@@ -199,23 +199,6 @@ $(document).ready(function() {
 
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td >0</td>
-        <td  class="failed"    >3</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="6665000">0.006</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_4072418062.html">@admin</a></td>
-
-        <td >0</td>
-        <td >0</td>
         <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
@@ -225,58 +208,7 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="1408000">0.001</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_2147548349.html">@db</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="2153000">0.002</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_3627984621.html">@employee</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >6</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">6</td>
-
-        <td >0</td>
-        <td  class="failed"    >2</td>
-        <td class="total">2</td>
-
-        <td class="duration" data-value="4512000">0.004</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_3268278743.html">@librarian</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >3</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">3</td>
-
-        <td >0</td>
-        <td  class="failed"    >1</td>
-        <td class="total">1</td>
-
-        <td class="duration" data-value="3104000">0.003</td>
+        <td class="duration" data-value="1802000">0.001</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
@@ -284,37 +216,20 @@ $(document).ready(function() {
 
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >9</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">9</td>
-
-        <td >0</td>
-        <td  class="failed"    >3</td>
         <td class="total">3</td>
 
-        <td class="duration" data-value="6665000">0.006</td>
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="1802000">0.001</td>
         <td class="failed">Failed</td>
       </tr>
       <tr>
         <td class="tagname"><a href="report-tag_4089311534.html">@smoke</a></td>
-
-        <td >0</td>
-        <td >0</td>
-        <td     class="skipped"   >9</td>
-        <td >0</td>
-        <td >0</td>
-        <td class="total">9</td>
-
-        <td >0</td>
-        <td  class="failed"    >3</td>
-        <td class="total">3</td>
-
-        <td class="duration" data-value="6665000">0.006</td>
-        <td class="failed">Failed</td>
-      </tr>
-      <tr>
-        <td class="tagname"><a href="report-tag_139049466.html">@student</a></td>
 
         <td >0</td>
         <td >0</td>
@@ -327,7 +242,7 @@ $(document).ready(function() {
         <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="2153000">0.002</td>
+        <td class="duration" data-value="1802000">0.001</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -337,17 +252,17 @@ $(document).ready(function() {
       <td></td>
       <td>0</td>
       <td>0</td>
-      <td>45</td>
+      <td>9</td>
       <td>0</td>
       <td>0</td>
-      <td>45</td>
+      <td>9</td>
 
       <td>0</td>
-      <td>15</td>
-      <td>15</td>
+      <td>3</td>
+      <td>3</td>
 
-      <td class="duration">0.033</td>
-      <td>8</td>
+      <td class="duration">0.005</td>
+      <td>3</td>
     </tr>
     <tr>
       <td></td>

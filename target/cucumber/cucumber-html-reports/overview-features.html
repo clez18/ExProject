@@ -52,9 +52,9 @@ $(document).ready(function() {
             data: [
                 0,
                 0,
-                9,
+                3,
                 0,
-                3
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 12) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 4) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,7 +107,7 @@ $(document).ready(function() {
         datasets: [{
             data: [
                 0,
-                3
+                1
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>01 Sep 2022, 22:51</td>
+      <td>01 Sep 2022, 23:35</td>
     </tr>
   </tbody>
 </table>
@@ -327,16 +327,16 @@ $(document).ready(function() {
 
         <td >0</td>
         <td >0</td>
-        <td     class="skipped"   >9</td>
+        <td     class="skipped"   >3</td>
         <td >0</td>
-        <td   class="undefined" >3</td>
-        <td class="total">12</td>
+        <td   class="undefined" >1</td>
+        <td class="total">4</td>
 
         <td >0</td>
-        <td  class="failed"    >3</td>
-        <td class="total">3</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
 
-        <td class="duration" data-value="6665000">0.006</td>
+        <td class="duration" data-value="1802000">0.001</td>
         <td class="failed">Failed</td>
       </tr>
   </tbody>
@@ -346,16 +346,16 @@ $(document).ready(function() {
       <td></td>
       <td>0</td>
       <td>0</td>
-      <td>9</td>
-      <td>0</td>
       <td>3</td>
-      <td>12</td>
+      <td>0</td>
+      <td>1</td>
+      <td>4</td>
 
       <td>0</td>
-      <td>3</td>
-      <td>3</td>
+      <td>1</td>
+      <td>1</td>
 
-      <td class="duration">0.006</td>
+      <td class="duration">0.001</td>
       <td>1</td>
     </tr>
     <tr>
