@@ -6,6 +6,7 @@ each scenario and each step
  */
 
 import com.adt.utilities.BrowserUtils;
+import com.adt.utilities.ConfigurationReader;
 import com.adt.utilities.Driver;
 import io.cucumber.java.*;
 import org.openqa.selenium.OutputType;
@@ -14,9 +15,9 @@ import org.openqa.selenium.TakesScreenshot;
 public class Hooks {
 
     // import from io.cucumber.java not from junit
-    @Before (order = 1)
+    @Before (order = 0)
     public void setupScenario(){
-
+        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
     }
 
     // @Before(value = "@login", order = 2)

@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>02 Sep 2022, 15:05</td>
+      <td>03 Sep 2022, 20:07</td>
     </tr>
   </tbody>
 </table>
@@ -128,8 +128,8 @@ $(document).ready(function() {
         <tr>
           <td class="tagname">Library app login feature</td>
           <td >0</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td >0</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">4</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="19665000">0.019</td>
+          <td class="duration" data-value="81758000">0.081</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -196,7 +196,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.001</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -235,11 +235,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given failed">
+<div class="brief step-name-Given skipped">
   <span class="keyword indention">Given</span>
   <span class="name">user is on the login page</span>
 
-  <span class="lead-duration duration">0.018</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -247,77 +247,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>io.cucumber.core.exception.CucumberException:</a>
-      </div>
-      <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>io.cucumber.core.exception.CucumberException: Failed to instantiate class com.adt.step_definitions.Login_StepDef
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:143)
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.getInstance(ObjectFactoryServiceLoader.java:127)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:86)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:57)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:95)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$3(CucumberExecutionContext.java:110)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:110)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunBeforeAllHooks.evaluate(Cucumber.java:266)
-	at io.cucumber.junit.Cucumber$RunAfterAllHooks.evaluate(Cucumber.java:281)
-	at io.cucumber.junit.Cucumber$StartTestRun.evaluate(Cucumber.java:233)
-	at io.cucumber.junit.Cucumber$FinishTestRun.evaluate(Cucumber.java:248)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
-	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
-	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
-	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
-	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:235)
-	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at io.cucumber.core.runtime.ObjectFactoryServiceLoader$DefaultJavaObjectFactory.cacheNewInstance(ObjectFactoryServiceLoader.java:135)
-	... 46 more
-Caused by: java.lang.NullPointerException
-	at com.adt.utilities.Driver.getDriver(Driver.java:48)
-	at com.adt.pages.LoginPage.&lt;init&gt;(LoginPage.java:10)
-	at com.adt.step_definitions.Login_StepDef.&lt;init&gt;(Login_StepDef.java:17)
-	... 51 more
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -352,10 +281,10 @@ Caused by: java.lang.NullPointerException
 </div>
 
 
-  <span class="lead-duration duration">0.001</span>
+  <span class="lead-duration duration">0.080</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
@@ -368,14 +297,111 @@ Caused by: java.lang.NullPointerException
   </span>
   <div class="description indention"></div>
 
-  <div id="element-4" class="collapse collapsable-details  in ">
+  <div id="element-3" class="collapse collapsable-details  in ">
 
 
+  <div class="inner-level hooks-element-before">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#before-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Hooks</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+    </div>
+
+    <div id="before-4" class="inner-level collapse collapsable-details  in ">
+        <div class="hook">
+          <div class="brief failed">
+            <span class="keyword indention">Before</span>
+              <span class="location name">com.adt.step_definitions.Hooks.setupScenario()</span>
+
+  <span class="lead-duration duration">7.183</span>
+
+          </div>
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-5">
+          <a>Error message</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 104.0.5112.101 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Carloss-Air.attlocal.net', ip: '2600:1700:528:160:0:0:0:43%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.12'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x000000010c184788 chromedriver + 4515720
+1   chromedriver                        0x000000010c1089d3 chromedriver + 4008403
+2   chromedriver                        0x000000010bd9b12a chromedriver + 413994
+3   chromedriver                        0x000000010bdc361c chromedriver + 579100
+4   chromedriver                        0x000000010bdbef8b chromedriver + 561035
+5   chromedriver                        0x000000010bdbafd3 chromedriver + 544723
+6   chromedriver                        0x000000010bdf568e chromedriver + 784014
+7   chromedriver                        0x000000010bdef603 chromedriver + 759299
+8   chromedriver                        0x000000010bdc5990 chromedriver + 588176
+9   chromedriver                        0x000000010bdc6a75 chromedriver + 592501
+10  chromedriver                        0x000000010c1546cd chromedriver + 4318925
+11  chromedriver                        0x000000010c158f35 chromedriver + 4337461
+12  chromedriver                        0x000000010c1601ff chromedriver + 4366847
+13  chromedriver                        0x000000010c159c5a chromedriver + 4340826
+14  chromedriver                        0x000000010c12fc2c chromedriver + 4168748
+15  chromedriver                        0x000000010c1764f8 chromedriver + 4457720
+16  chromedriver                        0x000000010c176693 chromedriver + 4458131
+17  chromedriver                        0x000000010c18ba3e chromedriver + 4545086
+18  libsystem_pthread.dylib             0x00007fff68435109 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00007fff68430b8b thread_start + 15
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.adt.utilities.Driver.getDriver(Driver.java:51)
+	at com.adt.step_definitions.Hooks.setupScenario(Hooks.java:20)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+        </div>
+    </div>
+  </div>
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-6">
 
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -387,7 +413,7 @@ Caused by: java.lang.NullPointerException
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-6" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
@@ -395,7 +421,7 @@ Caused by: java.lang.NullPointerException
   <span class="keyword indention">When</span>
   <span class="name">user enters tomsmith username</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.013</span>
 
 </div>
 
@@ -449,7 +475,7 @@ Caused by: java.lang.NullPointerException
   <span class="keyword indention">Then</span>
   <span class="name">user should see the successful login</span>
 
-  <span class="lead-duration duration">0.000</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -476,7 +502,7 @@ Caused by: java.lang.NullPointerException
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-7">
 
 <div class="brief failed">
   <span class="keyword indention">Hooks</span>
@@ -488,13 +514,13 @@ Caused by: java.lang.NullPointerException
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details  in ">
+    <div id="after-7" class="inner-level collapse collapsable-details  in ">
         <div class="hook">
           <div class="brief failed">
             <span class="keyword indention">After</span>
               <span class="location name">com.adt.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.012</span>
+  <span class="lead-duration duration">3.213</span>
 
           </div>
 
@@ -502,13 +528,64 @@ Caused by: java.lang.NullPointerException
 
   <div class="inner-level">
     <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-7">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-8">
           <a>Error message</a>
       </div>
-      <div id="msg-7" class="collapse collapsable-details  in ">
-        <pre>java.lang.NullPointerException
-	at com.adt.utilities.Driver.getDriver(Driver.java:48)
-	at com.adt.step_definitions.Hooks.teardownScenario(Hooks.java:38)
+      <div id="msg-8" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 105
+Current browser version is 104.0.5112.101 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Carloss-Air.attlocal.net', ip: '2600:1700:528:160:0:0:0:43%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.12'
+Driver info: driver.version: Driver
+remote stacktrace: 0   chromedriver                        0x0000000109891788 chromedriver + 4515720
+1   chromedriver                        0x00000001098159d3 chromedriver + 4008403
+2   chromedriver                        0x00000001094a812a chromedriver + 413994
+3   chromedriver                        0x00000001094d061c chromedriver + 579100
+4   chromedriver                        0x00000001094cbf8b chromedriver + 561035
+5   chromedriver                        0x00000001094c7fd3 chromedriver + 544723
+6   chromedriver                        0x000000010950268e chromedriver + 784014
+7   chromedriver                        0x00000001094fc603 chromedriver + 759299
+8   chromedriver                        0x00000001094d2990 chromedriver + 588176
+9   chromedriver                        0x00000001094d3a75 chromedriver + 592501
+10  chromedriver                        0x00000001098616cd chromedriver + 4318925
+11  chromedriver                        0x0000000109865f35 chromedriver + 4337461
+12  chromedriver                        0x000000010986d1ff chromedriver + 4366847
+13  chromedriver                        0x0000000109866c5a chromedriver + 4340826
+14  chromedriver                        0x000000010983cc2c chromedriver + 4168748
+15  chromedriver                        0x00000001098834f8 chromedriver + 4457720
+16  chromedriver                        0x0000000109883693 chromedriver + 4458131
+17  chromedriver                        0x0000000109898a3e chromedriver + 4545086
+18  libsystem_pthread.dylib             0x00007fff68435109 _pthread_start + 148
+19  libsystem_pthread.dylib             0x00007fff68430b8b thread_start + 15
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.adt.utilities.Driver.getDriver(Driver.java:51)
+	at com.adt.step_definitions.Hooks.teardownScenario(Hooks.java:39)
 </pre>
       </div>
     </div>
