@@ -1,13 +1,15 @@
-@Regression @smoke @login
+@Regression  @login
 Feature: Library app login feature
   User Story:
   As a user, I should be able to login with correct credentials. And dashboard should be displayed.
 
   Account is: tomsmith
+  Password is: SuperSecretPassword
 
   Background: For the scenarios in the feature file, user is expected to be on login page
     Given user is on the login page
 
+    @smoke
   Scenario: Login as tomsmith
     When user enters tomsmith username
     And user enters SuperSecretPassword password
