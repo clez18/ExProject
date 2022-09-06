@@ -14,5 +14,8 @@ public class BasePage {
     @FindBy(xpath = "//a[starts-with(@href, '/login')]")
     public WebElement Login;
 
+    @FindBy(xpath = "//a[starts-with(@href, '/dropdown')]")
+    public WebElement DropD;
+
 
 }
