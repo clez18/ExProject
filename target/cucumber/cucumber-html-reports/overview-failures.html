@@ -75,7 +75,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>06 Sep 2022, 00:44</td>
+      <td>12 Sep 2022, 14:36</td>
     </tr>
   </tbody>
 </table>
@@ -115,24 +115,25 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_2428774476.html">Selecting specific dropdowns</a>
+      <a href="report-feature_3193922317.html">Once on the keypress page, whatever key is pressed is displayed on the site.</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_1946519105.html">@dropdowns</a>
+       <a href="report-tag_2951276931.html">@keypress</a>
+       <a href="report-tag_4089311534.html">@smoke</a>
 </div>
 
 
-  <span class="lead-duration duration">1.747</span>
+  <span class="lead-duration duration">0.531</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User should see specific dropdown upon selection</span>
+  <span class="name">Press a key and it gets displayed</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -163,7 +164,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.adt.step_definitions.Hooks.setupScenario()</span>
 
-  <span class="lead-duration duration">6.598</span>
+  <span class="lead-duration duration">9.687</span>
 
           </div>
 
@@ -198,9 +199,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">user is on Dropdowns List page</span>
+  <span class="name">user is on keypress website</span>
 
-  <span class="lead-duration duration">0.358</span>
+  <span class="lead-duration duration">0.405</span>
 
 </div>
 
@@ -223,92 +224,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
-  <span class="name">user clicks option one from simple dropdown</span>
+  <span class="name">a key is pressed</span>
 
-  <span class="lead-duration duration">0.214</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks <span class="argument">2000</span>, October, and <span class="argument">31</span> from select your date of birth</span>
-
-  <span class="lead-duration duration">0.323</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks Texas from state selection</span>
-
-  <span class="lead-duration duration">0.570</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And failed">
-  <span class="keyword indention">And</span>
-  <span class="name">user clicks Java from which programming languages do you know?</span>
-
-  <span class="lead-duration duration">0.279</span>
+  <span class="lead-duration duration">0.125</span>
 
 </div>
 
@@ -320,16 +240,36 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: expected:&lt;Java&gt; but was:&lt;[[[[[ChromeDriver: chrome on MAC (0702d5af0c2f3e9802d9a001889c0129)] -&gt; name: Languages]] -&gt; tag name: option], [[[[ChromeDriver: chrome on MAC (0702d5af0c2f3e9802d9a001889c0129)] -&gt; name: Languages]] -&gt; tag name: option]]&gt;
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.adt.step_definitions.Dropdowns_StepDef.user_clicks_java_from_which_programming_languages_do_you_know(Dropdowns_StepDef.java:61)
-	at &#10045;.user clicks Java from which programming languages do you know?(file:///Users/kevinnava/IdeaProjects/ExProject/src/test/resources/Features/Dropdown.feature:11)
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=105.0.5195.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Carloss-Air.attlocal.net', ip: '2600:1700:528:160:0:0:0:16%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 105.0.5195.102, chrome: {chromedriverVersion: 105.0.5195.52 (412c95e51883..., userDataDir: /var/folders/t9/9tj1qc0x343...}, goog:chromeOptions: {debuggerAddress: localhost:60259}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 56289c7861ade5331caa8ce120bb22ba
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy21.sendKeys(Unknown Source)
+	at com.adt.step_definitions.KeyPress_StepDef.a_key_is_pressed(KeyPress_StepDef.java:22)
+	at &#10045;.a key is pressed(file:///Users/carlost/IdeaProjects/ADTexframework/src/test/resources/Features/KeyPresses.feature:6)
 </pre>
       </div>
     </div>
@@ -351,7 +291,7 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">user should assert selected dropdowns to verify</span>
+  <span class="name">the key is displayed on the site</span>
 
   <span class="lead-duration duration">0.000</span>
 
@@ -398,7 +338,7 @@ $(document).ready(function() {
             <span class="keyword indention">After</span>
               <span class="location name">com.adt.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">5.775</span>
+  <span class="lead-duration duration">5.474</span>
 
           </div>
 
@@ -410,14 +350,14 @@ $(document).ready(function() {
   <div class="embeddings inner-level">
   <div class="embedding indention">
     <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>User should see specific dropdown upon selection</a>
-      <a href="embeddings/embedding_-1623129231.png" download target="_blank">
+      <a>Press a key and it gets displayed</a>
+      <a href="embeddings/embedding_-1446966750.png" download target="_blank">
         <span class="download-button glyphicon glyphicon-download-alt"></span>
       </a>
     </div>
     <div id="embedding-6" class="collapse collapsable-details ">
       <div class="embedding-content">
-        <img src="embeddings/embedding_-1623129231.png">
+        <img src="embeddings/embedding_-1446966750.png">
       </div>
     </div>
   </div>

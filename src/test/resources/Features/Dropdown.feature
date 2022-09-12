@@ -1,3 +1,4 @@
+@smoke
 Feature: Selecting specific dropdowns
   Agile story: As a user when I am selecting specific dropdowns in the
   Dropdown List website by Cydeo it should show that selected dropdown

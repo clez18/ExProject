@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>06 Sep 2022, 00:44</td>
+      <td>06 Sep 2022, 14:50</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Selecting specific dropdowns</td>
-          <td      class="passed"    >4</td>
-          <td      class="failed"    >1</td>
-          <td     class="skipped"   >1</td>
+          <td      class="passed"    >6</td>
+          <td >0</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1747871000">1.747</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="1990081000">1.990</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Feature</span>
   <span class="name">Selecting specific dropdowns</span>
 
@@ -192,12 +192,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1.747</span>
+  <span class="lead-duration duration">1.990</span>
 
 
-  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">User should see specific dropdown upon selection</span>
 
@@ -208,7 +208,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
 
 
   <div class="inner-level hooks-element-before">
@@ -230,7 +230,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.adt.step_definitions.Hooks.setupScenario()</span>
 
-  <span class="lead-duration duration">6.598</span>
+  <span class="lead-duration duration">6.900</span>
 
           </div>
 
@@ -247,9 +247,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -259,7 +259,7 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
       <div class="step">
 
 
@@ -267,7 +267,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">user is on Dropdowns List page</span>
 
-  <span class="lead-duration duration">0.358</span>
+  <span class="lead-duration duration">0.484</span>
 
 </div>
 
@@ -294,7 +294,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks option one from simple dropdown</span>
 
-  <span class="lead-duration duration">0.214</span>
+  <span class="lead-duration duration">0.268</span>
 
 </div>
 
@@ -321,7 +321,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user clicks <span class="argument">2000</span>, October, and <span class="argument">31</span> from select your date of birth</span>
 
-  <span class="lead-duration duration">0.323</span>
+  <span class="lead-duration duration">0.379</span>
 
 </div>
 
@@ -348,7 +348,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user clicks Texas from state selection</span>
 
-  <span class="lead-duration duration">0.570</span>
+  <span class="lead-duration duration">0.654</span>
 
 </div>
 
@@ -371,11 +371,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And failed">
+<div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
   <span class="name">user clicks Java from which programming languages do you know?</span>
 
-  <span class="lead-duration duration">0.279</span>
+  <span class="lead-duration duration">0.202</span>
 
 </div>
 
@@ -383,24 +383,6 @@ $(document).ready(function() {
 
 
 
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError:</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError: expected:&lt;Java&gt; but was:&lt;[[[[[ChromeDriver: chrome on MAC (0702d5af0c2f3e9802d9a001889c0129)] -&gt; name: Languages]] -&gt; tag name: option], [[[[ChromeDriver: chrome on MAC (0702d5af0c2f3e9802d9a001889c0129)] -&gt; name: Languages]] -&gt; tag name: option]]&gt;
-	at org.junit.Assert.fail(Assert.java:89)
-	at org.junit.Assert.failNotEquals(Assert.java:835)
-	at org.junit.Assert.assertEquals(Assert.java:120)
-	at org.junit.Assert.assertEquals(Assert.java:146)
-	at com.adt.step_definitions.Dropdowns_StepDef.user_clicks_java_from_which_programming_languages_do_you_know(Dropdowns_StepDef.java:61)
-	at &#10045;.user clicks Java from which programming languages do you know?(file:///Users/kevinnava/IdeaProjects/ExProject/src/test/resources/Features/Dropdown.feature:11)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
 
@@ -416,7 +398,7 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then skipped">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">user should assert selected dropdowns to verify</span>
 
@@ -447,7 +429,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -459,13 +441,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.adt.step_definitions.Hooks.teardownScenario(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">5.775</span>
+  <span class="lead-duration duration">5.177</span>
 
           </div>
 
@@ -474,21 +456,6 @@ $(document).ready(function() {
 
 
 
-  <div class="embeddings inner-level">
-  <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
-      <a>User should see specific dropdown upon selection</a>
-      <a href="embeddings/embedding_-1623129231.png" download target="_blank">
-        <span class="download-button glyphicon glyphicon-download-alt"></span>
-      </a>
-    </div>
-    <div id="embedding-6" class="collapse collapsable-details ">
-      <div class="embedding-content">
-        <img src="embeddings/embedding_-1623129231.png">
-      </div>
-    </div>
-  </div>
-  </div>
 
         </div>
     </div>
